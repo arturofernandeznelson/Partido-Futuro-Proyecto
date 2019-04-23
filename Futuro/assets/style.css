@@ -1,42 +1,51 @@
-
-
-
-
 body{
-	
+	justify-content: center;
+    text-align: center;
 }
 
-
-
-li{
-    display: inline-block;
+.limpiar {
+    clear: both;
 }
 
 nav{
-	display: block;
-	text-align: right;
-    padding-top: 60px;
-    float: right;
-    width: 100%;
-    background-color: transparent;
+    padding-top: 2%;
+    padding-bottom: 0.8%;
+    border-bottom: 5px solid #4CAF50;
 }
 
-.elementoMenu>a {
-	display: inline-block;
+#logoDiv{
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+#menuDiv{
+    width: 80%;
+}
+
+.elementoMenu {
+    padding: 0.3%;
+    text-decoration:none;
+    display: inline-block;
+}
+.elementoMenu>a {	
 	padding: 5px;
 	text-decoration: none;
 	color: #555555;
 	transition-duration: 0.8s;
 }
 
+.elementoMenu>a:hover {   
+    text-decoration: none;
+}
+
 .submenu {
+    margin-top: 0.5%;
     display: none;
+    width: 10%;
     position: absolute;
     background-color: #fff;
-    border-top: solid 4px #64dd17;
-    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    border-bottom: solid 2px #4CAF50;
 }
 .submenu a {
     color: black;
@@ -49,10 +58,10 @@ nav{
 }
 
 .submenu a:hover {
-    color: #663300;
+    color: white;
     text-decoration: none;
-    background-color: #e0e0e0;
-	transition-duration: 0.8s;
+    background-color: #4CAF50;
+	transition-duration: 0.2s;
 }
 
 .elementoMenu:hover .submenu{
