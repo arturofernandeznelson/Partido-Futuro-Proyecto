@@ -1,0 +1,66 @@
+
+
+
+
+body{
+	
+}
+
+
+
+li{
+    display: inline-block;
+}
+
+nav{
+	display: block;
+	text-align: right;
+    padding-top: 60px;
+    float: right;
+    width: 100%;
+    background-color: transparent;
+}
+
+.elementoMenu>a {
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none;
+	color: #555555;
+	transition-duration: 0.8s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-top: solid 4px #64dd17;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.75);
+}
+.submenu a {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+}
+
+.submenu a:hover {
+    color: #663300;
+    text-decoration: none;
+    background-color: #e0e0e0;
+	transition-duration: 0.8s;
+}
+
+.elementoMenu:hover .submenu{
+	display: block;
+}
+
+.elementoMenu:hover>a {
+	color: grey;
+	transition-duration: 0.8s;
+}
+
