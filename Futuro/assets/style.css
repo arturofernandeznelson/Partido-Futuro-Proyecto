@@ -9,8 +9,12 @@ body{
 
 nav{
     padding-top: 2%;
-    padding-bottom: 0.8%;
-    border-bottom: 5px solid #4CAF50;
+    padding-bottom: 1%;
+   -webkit-box-shadow: 5px 67px 67px -43px rgba(121,179,55,0.68);
+    -moz-box-shadow: 5px 67px 67px -43px rgba(121,179,55,0.68);
+    box-shadow: 5px 67px 67px -43px rgba(121,179,55,0.68);
+
+
 }
 
 #logoDiv{
@@ -21,15 +25,18 @@ nav{
 
 #menuDiv{
     width: 80%;
+    text-align: center;
 }
 
 .elementoMenu {
+    margin: 2%;
     padding: 0.3%;
     text-decoration:none;
     display: inline-block;
 }
 .elementoMenu>a {	
-	padding: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
 	text-decoration: none;
 	color: #555555;
 	transition-duration: 0.8s;
@@ -42,11 +49,14 @@ nav{
 .submenu {
     margin-top: 0.5%;
     display: none;
-    width: 10%;
+    width: 14%;
     position: absolute;
     background-color: #fff;
-    border-bottom: solid 2px #4CAF50;
+    border-bottom: solid 5px #4CAF50;
+    border-top: solid 5px #4CAF50;
+    z-index: 2;
 }
+
 .submenu a {
     color: black;
     text-align: left;
@@ -55,6 +65,24 @@ nav{
     background-color: transparent;
     width: 100%;
     padding: 10px;
+}
+
+#contenedorCarrousel {
+    justify-content: center;
+}
+.carousel {
+    width: 75%;
+}
+.carousel-inner {
+    margin: auto;
+
+}
+.carousel-item {
+    max-height: 400px;
+
+}
+.carousel-item img{
+    max-height: 500px;
 }
 
 .submenu a:hover {
